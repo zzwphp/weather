@@ -1,14 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: zhangzhenwei
- * Date: 2019/5/31
- * Time: 14:44
+
+/*
+ * This file is part of the ritin/weather.
+ *
+ * (c) ritin <zzw6105@gmail.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
  */
 
 namespace Ritin\Weather\Exceptions;
 
 class HttpException extends Exception
 {
-
 }

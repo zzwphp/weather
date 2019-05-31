@@ -1,9 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: zhangzhenwei
- * Date: 2019/5/31
- * Time: 17:04
+
+/*
+ * This file is part of the ritin/weather.
+ *
+ * (c) ritin <zzw6105@gmail.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
  */
 
 namespace Ritin\Weather;
@@ -14,7 +17,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 
     public function register()
     {
-        $this->app->singleton(Weather::class, function(){
+        $this->app->singleton(Weather::class, function () {
             return new Weather(config('services.weather.key'));
         });
 
