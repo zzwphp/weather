@@ -59,7 +59,7 @@ class Weather
      * @throws InvalidArgumentException
      * @author 张镇炜 <772979140@qq.com>
      */
-    public function getWeather($city, string $type = 'base', string $format = 'json')
+    public function getWeather($city, $type = 'base', $format = 'json')
     {
 
         $url = 'https://restapi.amap.com/v3/weather/weatherInfo';
@@ -89,24 +89,15 @@ class Weather
         }
     }
 
+    public function getLiveWeather($city, $format = 'json')
+    {
 
-    //    public function getUsers()
-    //    {
-    //
-    //    }
-    //
-    //    public function updateProfile()
-    //    {
-    //
-    //    }
-    //
-    //    public function deleteOrder()
-    //    {
-    //
-    //    }
-    //
-    //    public function revertAction()
-    //    {
-    //
-    //    }
+        return $this->getWeather($city, 'base', $format);
+    }
+
+    public function getForecastsWeather($city, $format = 'json')
+    {
+
+        return $this->getWeather($city, 'all', $format);
+    }
 }
