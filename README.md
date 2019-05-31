@@ -4,6 +4,8 @@
 
 [![Build Status](https://travis-ci.org/zzwphp/weather.svg?branch=master)](https://travis-ci.org/zzwphp/weather)
 
+![StyleCI build status](https://github.styleci.io/repos/189569324/shield)
+ 
 ## License
 
 学习后的练习项目，如果需要详细与更完整代码，可以查看 <a href="https://github.com/overtrue/weather">overture/weather</a>。
