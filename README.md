@@ -2,6 +2,7 @@
 
 <p align="center"> 基于 <a>高德开放平台</a> 的 PHP 的天气信息组件。</p>
 
+[![Build Status](https://travis-ci.org/zzwphp/weather.svg?branch=master)](https://travis-ci.org/zzwphp/weather)
 
 ## License
 
